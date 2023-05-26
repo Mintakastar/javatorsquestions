@@ -26,8 +26,8 @@ public class Main_20230525_Streams {
     public static void main(String[] args) {
 
         System.out.println("\nQuestion example, does not compile, but was edited to compile.");
-        //var s = DoubleStream.of(1.2, 2.4);  DOES NOT COMPILE
-        /*var*/DoubleStream s = DoubleStream.of(1.2, 2.4); //works
+        var s = DoubleStream.of(1.2, 2.4);  //COMPILED USING JAVA JDK 10+  my maven configuration was wrong
+        ///*var*/DoubleStream s = DoubleStream.of(1.2, 2.4); //works  // NOT NEEDED
         s.peek(System.out::println).filter(x -> x > 2).count();
 
         /*
@@ -39,7 +39,7 @@ public class Main_20230525_Streams {
         */
 
         System.out.println("\nSecond example");
-        DoubleStream s2 = DoubleStream.of(1.2, 2.4); //works
+        var s2 = DoubleStream.of(1.2, 2.4); //works
         s2.peek(System.out::println).filter(x -> x > 2).peek(System.out::println).count();
         /*-------------
         Second example
@@ -51,7 +51,7 @@ public class Main_20230525_Streams {
 
 
         System.out.println("\nThird example");
-        DoubleStream s3 = DoubleStream.of(1.2, 2.4); //works
+        var s3 = DoubleStream.of(1.2, 2.4); //works
         s3.filter(x -> x > 2).peek(System.out::println).count();
         /*-------------
         Third example
