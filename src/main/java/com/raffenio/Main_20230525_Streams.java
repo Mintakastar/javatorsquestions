@@ -17,9 +17,9 @@ public class Main_20230525_Streams {
      * A. 1
      * B. 2
      * C. 2.4
-     * D. 1.2 and 2.4
+     * D. 1.2 and 2.4   THIS IS THE ANSWER!
      * E. There is no output.
-     * F. The code does not compile.  ---> Answer?
+     * F. The code does not compile.
      * G. An exception is thrown.
      * @param args
      */
