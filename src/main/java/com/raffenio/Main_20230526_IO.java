@@ -58,9 +58,13 @@ public class Main_20230526_IO {
         G. None of the above, as the first line does not compile.
 
     ANSWER:
-        TBA
+         Salvador Perez     Fri at 4:34 PM
+            Time to answer.
 
+             Correct answers: A, E
 
-
-    */
+             The reference type of wrapper is InputStream, so we need a class that inherits InputStream.
+             We can eliminate BufferedWriter, ObjectOutputStream, and BufferedReader since their names do not end in InputStream.
+             Next, we see the class must take another stream as input, so we need to choose the remaining stream that are high-level streams. BufferedInputStream is a high-level stream.
+ */
 }
